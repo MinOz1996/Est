@@ -1,0 +1,121 @@
+
+  ####################################################################
+  #                                                                  #
+  #    EEEEEEEE   SSSSSSSS   TTTTTTTT   ZZZZZZZZ                     #
+  #    EE         SS            TT            ZZ                     #
+  #    EE         SS            TT           ZZ                      #
+  #    EEEEEE     SSSSSSSS      TT          ZZ                       #
+  #    EE               SS      TT         ZZ                        #
+  #    EE               SS      TT        ZZ                         #
+  #    EEEEEEEE   SSSSSSSS      TT       ZZZZZZZZ                    #
+  #                                                                  #
+  #       THE AEGIS SHROUD v2 PROFESSIONAL - BY MANUS AI             #
+  ####################################################################
+
+  [1] Apply System Hardening & Trace Cleaning
+  [2] Restore Original System Configuration (Remove Persistence)
+  [3] View Current System Configuration Profile
+  [4] Configure Enhanced Privacy Settings
+  [5] Exit
+
+Select an option [1-5]: 1
+[i] Backing up original system configuration...
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\SOFTWARE\Microsoft\Cryptography
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\HARDWARE\DESCRIPTION\System\BIOS
+ERROR: Invalid key name.
+Type "REG EXPORT /?" for usage.
+  Backed up registry key: HKLM:\HARDWARE\DESCRIPTION\System\CentralProcessor\0
+  Backed up original MAC addresses.
+[+] Original system configuration backed up to AegisShroud_v2_Professional_Backup.
+[i] Generating new system configuration profile...
+[+] Profile saved to AegisProfile_v2_Professional.json
+[i] Applying system configuration from profile...
+[+] Applying System Configuration Layer...
+  Renaming computer from 'DESKTOP-VLLASHR' to '5U895XEF'...
+  MachineGuid, ProductId, ComputerName configured.
+[+] Applying Network Configuration Layer...
+  MAC Address configured for adapter WAN Miniport (IP).
+  MAC Address configured for adapter WAN Miniport (IPv6).
+  MAC Address configured for adapter WAN Miniport (Network Monitor).
+  MAC Address configured for adapter Realtek Gaming 2.5GbE Family Controller.
+[+] Applying Firmware Configuration Layer (Registry-based)...
+  Manufacturer, ProductName, BIOS info configured (Registry).
+[+] Applying Component Configuration Layer (CPU Name)...
+  CPU Name configured.
+[+] Applying GPU Configuration Layer...
+[+] Applying Monitor Configuration Layer...
+[+] Applying Disk Configuration Layer (Volume ID)...
+  Volume ID configuration is conceptual in PowerShell. Physical disk serial requires low-level tools.
+[i] Applying Registry Timestamp Stomping (conceptual)...
+  Stomping timestamp for HKLM:\SOFTWARE\Microsoft\Cryptography to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\HARDWARE\DESCRIPTION\SySTEM\BIOS to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\HARDWARE\DESCRIPTION\SySTEM\CentralProcessor\0 to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\SYSTEM\CurrentControlSet\Enum\PCI to 5/1/2026 6:56:07 PM (conceptual)...
+  Stomping timestamp for HKLM:\SYSTEM\CurrentControlSet\Enum\DISPLAY to 5/1/2026 6:56:07 PM (conceptual)...
+[+] Registry timestamps conceptually stomped.
+[+] System configuration applied successfully.
+[i] Executing Deep System Trace Cleaner...
+  Cleared SetupAPI log: C:\Windows\inf\setupapi.dev.log
+  Cleared Prefetch files.
+
+Confirm
+The item at
+Microsoft.PowerShell.Core\FileSystem::C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Recent\Autom
+aticDestinations has children and the Recurse parameter was not specified. If you continue, all
+children will be removed with the item. Are you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+
+Confirm
+The item at Microsoft.PowerShell.Core\FileSystem::C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations
+ has children and the Recurse parameter was not specified. If you continue, all children will be removed with the item. Are
+you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+  Cleared Recent Files and Jump Lists.
+  Cleared temporary files.
+  Flushed DNS resolver cache.
+  Attempting to clear specific Event Logs...
+WARNING:     Could not clear Event Log 'System': The term 'Remove-WinEvent' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+WARNING:     Could not clear Event Log 'Security': The term 'Remove-WinEvent' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+WARNING:     Could not clear Event Log 'Application': The term 'Remove-WinEvent' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+WARNING:     Could not clear Event Log 'Windows PowerShell': The term 'Remove-WinEvent' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that
+the path is correct and try again.
+WARNING:     Could not clear Event Log 'Microsoft-Windows-Kernel-PnP/Configuration': The term 'Remove-WinEvent' is not
+recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path
+ was included, verify that the path is correct and try again.
+  Cleared AppCompatCache registry entry. (Full effect may require reboot)
+WARNING:   Could not clear MUICache: Property "PSPropertyInfo" cannot be found.
+[+] Deep System Trace Cleaner completed.
+[i] Configuring enhanced privacy settings...
+  Disabled Windows Telemetry and Data Collection.
+  Disabled Activity History.
+  Disabled Advertising ID.
+  Disabled Cortana and Web Search integration.
+[+] Enhanced privacy settings configured.
+[i] Setting WMI persistence for auto-application on logon...
+WARNING: Failed to set WMI persistence: Not found
+[!] System hardening applied. A reboot is highly recommended.
+Press Enter to continue...:
+
